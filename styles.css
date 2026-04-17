@@ -1881,28 +1881,27 @@ body {
   }
 
   #journey {
-    padding: 80px 24px;
+    padding: 60px 0;
   }
-  .timeline-track {
-    flex-direction: column;
-    gap: 40px;
-    min-width: auto;
-    padding: 0;
-    align-items: flex-start;
+  .journey-container {
+    padding: 20px 10px;
   }
-  .timeline-line {
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 24px;
-    transform: none;
+  .timeline-canvas-wrapper {
+    width: 95%;
+    padding: 10px;
+    margin: 30px auto;
   }
-  .timeline-node {
-    flex-direction: row;
-    gap: 16px;
-    padding-left: 0;
+  .timeline-canvas-wrapper::before {
+    top: -30px;
+    left: -20px;
+    right: -20px;
+    bottom: -30px;
+    filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.1));
   }
-  .node-year { margin-bottom: 0; width: 60px; text-align: right; }
+  #timeline-canvas {
+    width: 100%;
+    transform: scale(1.05); /* Slight zoom to fill more of the frame */
+  }
 
   #collab {
     padding: 80px 24px;
