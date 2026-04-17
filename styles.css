@@ -1781,9 +1781,72 @@ body {
 
   #hero {
     padding: 100px 24px 60px;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-video-bg {
+    width: 100%;
+    left: 0;
+  }
+  .hero-content {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-title-wrapper {
+    justify-content: center;
+    margin-bottom: 20px;
   }
   .hero-title {
     font-size: clamp(38px, 12vw, 60px);
+    text-align: center;
+  }
+  .hero-chips {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .hero-bottom {
+    order: 1;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-location {
+    text-align: center;
+  }
+  .hero-plus-divider {
+    margin: 8px 0;
+  }
+  .hero-socials {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .hero-main-photo {
+    order: 2;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto 0;
+    transform: none;
+    opacity: 1;
+    animation: none;
+    display: block;
   }
 
   #projects {
